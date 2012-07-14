@@ -13,14 +13,11 @@ version is 4.3.10.
 
   1. Clone the repository:
 
-        git clone --recursive https://github.com/sorin-ionescu/oh-my-zsh.git ~/.oh-my-zsh
+        git clone --recursive https://github.com/dwelve/oh-my-zsh.git ~/.oh-my-zsh
 
-  2. Create a new Zsh configuration by copying the Zsh configuration file
-     templates provided:
+  2. Create a symlinks for Zsh configuration files into home directory:
 
-        for rcfile in ~/.oh-my-zsh/templates/z{shenv,shrc,login,logout}; do
-          cp -f $rcfile ~/.$rcfile:t
-        done
+        python ~/.oh-my-zsh/config/create_symlinks.py
 
   3. Set Zsh as your default shell:
 
